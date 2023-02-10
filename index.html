@@ -1,3 +1,20 @@
+<?php
+
+
+if($_POST["message"]) {
+
+
+mail("your@email.address", "Here is the subject line",
+
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+
+}
+
+
+?>
+
 <!DOCTYPE HTML>
 <!--
 	Astral by HTML5 UP
@@ -6,7 +23,7 @@
 -->
 <html>
 	<head>
-		<title>Astral by HTML5 UP</title>
+		<title>Kirin Agcaoili</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -22,7 +39,9 @@
 						<a href="#" class="icon solid fa-home"><span>Home</span></a>
 						<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
 						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a>
+						<a href="https://www.linkedin.com/in/kirin-agcaoili/" class="icon brands fa-linkedin" target="_blank"><span>LinkedIn</span></a>
+						<a href="https://github.com/kagc" class="icon brands fa-github" target="_blank"><span>GitHub</span></a>
+						<a href="https://angel.co/u/kirin-agcaoili" class="icon brands fa-angellist" target="_blank"><span>AngelList</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -31,12 +50,12 @@
 						<!-- Me -->
 							<article id="home" class="panel intro">
 								<header>
-									<h1>Jane Doe</h1>
-									<p>Senior Astral Projectionist</p>
+									<h1>Kirin Agcaoili</h1>
+									<p>Full Stack Software Developer</p>
 								</header>
 								<a href="#work" class="jumplink pic">
 									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-									<img src="images/me.jpg" alt="" />
+									<img src="images/me.jpeg" alt="" />
 								</a>
 							</article>
 
@@ -46,22 +65,21 @@
 									<h2>Work</h2>
 								</header>
 								<p>
-									Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
-									Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-									luctus elit eget interdum.
+									As a full stack software developer, I have enjoyed using Python, JavaScript, React/Redux, SQL, HTML, and CSS in my projects. I'm always looking for ways to make something new.
+									<p>Feel free to take a look at some of the projects I've created or contributed towards.</p>
 								</p>
 								<section>
 									<div class="row">
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
+											<a href="https://directables.onrender.com" class="image fit" target="_blank"><img src="images/homepage.png" alt="Screen shot of the Directables site home page, showing a list of of image cards."></a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+											<a href="https://firestarter.onrender.com" class="image fit" target="_blank"><img src="images/FireStarterHomePage.png" alt=""></a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+											<a href="https://airbnb-clone-0h30.onrender.com" class="image fit" target="_blank"><img src="images/detailspot.png" alt=""></a>
 										</div>
-										<div class="col-4 col-6-medium col-12-small">
+										<!-- <div class="col-4 col-6-medium col-12-small">
 											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
@@ -87,7 +105,7 @@
 										</div>
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
-										</div>
+										</div> -->
 									</div>
 								</section>
 							</article>
@@ -97,7 +115,7 @@
 								<header>
 									<h2>Contact Me</h2>
 								</header>
-								<form action="#" method="post">
+								<form action="contact-form-process.php" method="post">
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium">
