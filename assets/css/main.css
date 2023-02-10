@@ -2189,3 +2189,14 @@ input, select, textarea {
 			}
 
 		}
+
+.about-me {
+	font-size: 1.1rem;
+	color: rgb(132, 132, 132);
+}
+
+.cons {
+	margin-top: 1rem;
+	/* color: rgb(175, 175, 175); */
+	font-size: 1.6rem;
+}
