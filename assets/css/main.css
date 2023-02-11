@@ -2207,3 +2207,7 @@ input, select, textarea {
 	/* margin-right: 1rem; */
 	/* border-radius: 50%; */
 }
+
+textarea {
+	resize: none;
+}
